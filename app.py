@@ -26,7 +26,6 @@ def get_products():
         return jsonify(filtered)
     return jsonify(products)
 
-# TODO: Implement GET /products/<id> route that returns a specific product by ID or 404
 
 @app.route("/products/<int:id>")
 def get_product_by_id(id):
